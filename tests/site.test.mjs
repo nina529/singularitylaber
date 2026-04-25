@@ -83,7 +83,7 @@ test("contact page includes all provided contact addresses", () => {
   const html = read("contact.html");
   assert.match(html, /support@singularitylaber\.com/i);
   assert.match(html, /bussiness@singularitylaber\.com/i);
-  assert.match(html, /nina@myskyrs\.com/i);
+  assert.match(html, /nina@singularitylaber\.com/i);
 });
 
 test("support page includes support guidance and FAQ language", () => {
@@ -103,4 +103,5 @@ test("privacy page includes detailed privacy sections", () => {
   assert.match(html, /Device Permissions/i);
   assert.match(html, /Third-Party Services/i);
   assert.match(html, /IAA Advertising and Analytics/i);
+  assert.match(html, /nina@singularitylaber\.com/i);
 });
